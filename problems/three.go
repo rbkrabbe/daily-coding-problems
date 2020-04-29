@@ -24,13 +24,6 @@ import (
 	"fmt"
 )
 
-// Node Represents a node in a tree.
-type Node struct {
-	Val   string
-	Left  *Node
-	Right *Node
-}
-
 //ThreePrint Returns a string representing the tree rooted at the provided Node.
 func ThreePrint(node *Node) string {
 

@@ -10,17 +10,11 @@
 
 package problems
 
-import (
-	"fmt"
-)
-
 // Four Given an array of integers, find the first missing positive integer in linear time and constant space.
 func Four(numbers []int) int {
 
 	numNegative := shiftNegativeLeft(numbers)
 	positive := numbers[numNegative:]
-
-	fmt.Println(positive)
 
 	for _, n := range positive {
 
@@ -32,8 +26,6 @@ func Four(numbers []int) int {
 			positive[n-1] *= -1
 		}
 	}
-
-	fmt.Println(positive)
 
 	result := 1
 	for _, n := range positive {
