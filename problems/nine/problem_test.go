@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestEight(t *testing.T) {
+func TestNine(t *testing.T) {
 
 	var tests = []struct {
 		numbers []int
@@ -17,7 +17,7 @@ func TestEight(t *testing.T) {
 		{[]int{6, 5, 3, 4}, 10},
 		{[]int{5, 6, 3}, 8},
 		{[]int{5, 6, 3, 4}, 10},
-		{[]int{2, 4, -6, 2, 5}, 8},
+		{[]int{2, 4, -6, 2, 5}, 9},
 	}
 
 	for _, tt := range tests {
