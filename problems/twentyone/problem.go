@@ -16,6 +16,7 @@ type Slot struct {
 	End   int
 }
 
+// Twentyone computes the maximum number of simultaneously running slots.
 func Twentyone(slots []Slot) int {
 
 	sort.Slice(slots, func(i, j int) bool { return slots[i].Start < slots[i].End })
